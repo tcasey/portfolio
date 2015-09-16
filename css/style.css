@@ -1,0 +1,130 @@
+html {
+  box-sizing: border-box;
+}
+body {
+background-color: maroon;
+
+}
+div {
+    border: 1px solid white;
+/* Navigation Section */
+}
+.top-navigation {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-right: 100px;
+    border-top: 0;
+    border-bottom: 1px solid #DDD;
+    z-index: 9999;
+}
+.top-navigation > .content {
+    width: 970px;
+    height: 70px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    box-sixing: ;
+}
+.top-navigation .links {
+	float: right;
+    font-family: 'Roboto', sans-serif;
+    color: #838994;
+    font-size: 1.04rem;
+    margin-top: 1.7rem;
+    margin-right: 20px;
+    -webkit-font-smoothing: antialiased;
+}
+.top-navigation .links li {
+	display: inline-block;
+    margin-left: 25px;
+    color:#838994;
+}
+.top-navigation .links .active {
+	color: #4c5058;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+.top-navigation a {
+	background-color: transparent;
+    text-decoration: none;
+    color: gray;
+}
+/* Background */
+.introduction {
+	background-image: url('https://images.unsplash.com/photo-1431578500526-4d9613015464?q=80&fm=jpg&s=169b4f4e6f3882a03b6b93b2e6848052');
+	background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+    
+    /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* Main Body Content 
+@media only screen and (min-width: 768px)
+@media only screen and (min-width: 320px)
+@media only screen and (min-width: 768px)
+@media only screen and (min-width: 320px)
+@media only screen and (min-width: 320px)
+*/
+.circle {
+    background-color: #fff;
+    border-radius: 100%;
+    margin: 100px 0 0 -200px;
+    height: 400px;
+    width: 400px;
+    opacity: 0.7;
+    filter: alpha(opacity=50);
+    zoom: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.circle-text {
+    padding-top: 125px;
+}
+
+.circle-text {
+    color: #333;
+    font-family: 'nevis', helvetica, tahoma, arial, sans-serif;
+    line-height: 150%;
+    padding-top: 75px;
+}
+
+h1 {
+    color: #555;
+    font-family: 'nevis', helvetica, tahoma, arial, sans-serif;
+    font-size: 200%;
+    text-align: center;
+    text-transform: uppercase;
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+/* Footer */
