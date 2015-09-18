@@ -2,7 +2,7 @@ html {
     box-sizing: border-box;
 }
 body {
-    background-color: maroon;
+    background-color: ;
 }
 
 .content-wrap {
@@ -77,8 +77,8 @@ body {
     width: 100%;
     height: auto;
     /* Set up positioning */
-    position: ;
-    top: 100px;
+    position: absolute;
+    top: 50px;
     left: 0;
     z-index: -1; 
 }
@@ -89,13 +89,14 @@ body {
 .circle {
     background-color: #fff;
     border-radius: 100%;
-    margin: -600px 0 0 450px;
+    margin-left: -200px;
+    margin-top: -50px;
     height: 400px;
     width: 400px;
     opacity: 0.7;
     filter: alpha(opacity=50);
     zoom: 1;
-    position: ;
+    position: absolute;
     top: 50%;
     left: 50%;
     z-index: 1;
@@ -118,13 +119,21 @@ body {
 .profile {
     display: block;
     margin: 0;
-    margin-top: 200px;
+    margin-top: 1000px;
     padding: 20px;
     border: 0;
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
     z-index: 999;
+}
+.selfie {
+    width: 35%;
+    height: 35%;
+    border-radius: 5em;
+    float: left;
+    margin-top: ;
+    padding: 20px;
 }
 .profile .header {
     font-family: 'nevis', helvetica, tahoma, arial, sans-serif;
@@ -135,15 +144,23 @@ body {
     font-size: 2.04rem;
     width: 100%;
 }
+.profile .first-p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+}
 .profile p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.1em;
+    display: block;
+
 }
 /* Projects */
 .projects {
     background-color: grey;
-    padding: 20px;
+    padding: 0;
     width: 100%;
+    position: absolute;
+    margin-left: -10px;
 }
 .projects .header {
     font-family: 'nevis', helvetica, tahoma, arial, sans-serif;
@@ -188,6 +205,9 @@ body {
     margin-bottom: 200px;
 }
 /* Contact */
+.contact {
+    margin-top: 800px;
+}
 .contact .big-button {
     text-shadow: none;
     text-align: center;
@@ -197,13 +217,30 @@ body {
     line-height: 1.33;
     background-color: #f15a29;
     border-color: #f15a29;
-    width: 9.688rem;
+    width: 11rem;
     color: white;
     font-size: 1.125rem;
     margin-top: 50px;
     margin-left: 600px;
     display: block;
     -webkit-font-smoothing: antialiased;
+}
+.contact .map {
+    width: 40%;
+    height: 50%;
+    float: right;
+    padding: 20px;
+    border-radius: 3em;
+}
+.contact .text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    display: block;
+}
+.contact .info {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    display: block;
 }
 
 /* Footer */
