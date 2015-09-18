@@ -4,16 +4,12 @@ html {
 body {
     background-color: maroon;
 }
+
+.content-wrap {
+    max-width: 1200px;
+}
 /* Navigation Section */
 
-@media only screen and (min-width: 320px) {
-    .top-navigation,
-    .top-navigation .name,
-    .top-navigation .links,
-    .top-navigation .links li  {
-        font-size: 1em;
-    }
-}
 .top-navigation {
     background-color: #fff;
     position: fixed;
@@ -36,7 +32,8 @@ body {
 .top-navigation .name {
     float: left;
     font-family: 'nevis', helvetica, tahoma, arial, sans-serif;
-    font-weight: 400;
+    font-weight: ;
+    letter-spacing: 0.3em;
     text-transform: uppercase;
     color: #838994;
     font-size: 2.04rem;
@@ -81,7 +78,7 @@ body {
     height: auto;
     /* Set up positioning */
     position: ;
-    top: 0;
+    top: 100px;
     left: 0;
     z-index: -1; 
 }
@@ -89,11 +86,6 @@ body {
 }
 
 /*  Circle Content */
-@media only screen and (min-width: 768px) {
-    .circle {
-        font-size: 3em;
-    }
-}
 .circle {
     background-color: #fff;
     border-radius: 100%;
@@ -108,44 +100,15 @@ body {
     left: 50%;
     z-index: 1;
 }
-@media only screen and ( min-width: 320px) {
-    .circle-text {
-        font-size: 3em;
-    }
-}
 .circle-text {
     color: #333;
-    font-family: 'nevis', helvetica, tahoma, arial, sans-serif;
+    font-family: 'Exo',sans-serif;
     font-size: 2.04rem;
-    line-height: 150%;
+    font-weight: 500;
+    letter-spacing: .20em;
+    line-height: 200%;
     padding-top: 75px;
-}
-@media only screen and (min-width: 768px) {
-    h1 {
-        font-size: 3em;
-    }
-}
-h1 {
-    color: #555;
-    font-family: 'nevis', helvetica, tahoma, arial, sans-serif;
-    font-size: 200%;
     text-align: center;
-    text-transform: uppercase;
-    text-s
-}
-h1 {
-    display: block;
-    font-size: 2em;
-    -webkit-margin-before: 0.67em;
-    -webkit-margin-after: 0.67em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px; 
-    font-weight: bold;
-}
-@media only screen and (min-width: 320px;) {
-    .down-arrow {
-        font-size: 3em;
-    }
 }
 .down-arrow {
     margin-left: 170px;
@@ -156,49 +119,74 @@ h1 {
     display: block;
     margin: 0;
     margin-top: 200px;
-    padding: 0;
+    padding: 20px;
     border: 0;
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
     z-index: 999;
 }
-.profile .big-button {
-    text-shadow: none;
+.profile .header {
+    font-family: 'nevis', helvetica, tahoma, arial, sans-serif;
     text-align: center;
-    border-style: none;
-    border-radius: 4px;
-    padding: 16px 26px;
-    line-height: 1.33;
-    background-color: #f15a29;
-    border-color: #f15a29;
-    width: 9.688rem;
-    color: white;
-    font-size: 1.125rem;
-    margin-top: 50px;
-    margin-left: 600px;
-    display: block;
-    -webkit-font-smoothing: antialiased;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #838994;
+    font-size: 2.04rem;
+    width: 100%;
+}
+.profile p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
 }
 /* Projects */
-.projects .big-button {
-    text-shadow: none;
+.projects {
+    background-color: grey;
+    padding: 20px;
+    width: 100%;
+}
+.projects .header {
+    font-family: 'nevis', helvetica, tahoma, arial, sans-serif;
+    font-weight: ;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #838994;
+    font-size: 2.04rem;
+    width: 100%;
+    padding: 40px 0;
+    top: 0;
+    left: 0;
+    border-top: 0;
+    border-bottom: 1px solid #DDD;
+    background-color: grey;
     text-align: center;
-    border-style: none;
-    border-radius: 4px;
-    padding: 16px 26px;
-    line-height: 1.33;
-    background-color: #f15a29;
-    border-color: #f15a29;
-    width: 9.688rem;
     color: white;
-    font-size: 1.125rem;
-    margin-top: 50px;
-    margin-left: 600px;
+    font-size: 1.9rem;
+    margin-top: 0px;
+    margin-left: ;
     display: block;
     -webkit-font-smoothing: antialiased;
 }
-
+.projects .NYT-Hack {
+    width: 15rem;
+    height: 25rem;
+    display: block;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-bottom: 50px;
+}
+.projects .Karma {
+    width: 50%;
+    height: 50%;
+    display: block;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: -450px;
+    margin-left: 600px;
+    margin-bottom: 200px;
+}
 /* Contact */
 .contact .big-button {
     text-shadow: none;
