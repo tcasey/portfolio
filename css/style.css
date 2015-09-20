@@ -9,7 +9,14 @@ body {
     max-width: 1200px;
 }
 /* Navigation Section */
-
+@media only screen and (max-width: 500px) {
+    .top-navigation,
+    .top-navigation > .content,
+    .top-navigation li {
+        font-size: 1em;
+        width: 33%
+    }
+}
 .top-navigation {
     background-color: #fff;
     position: fixed;
@@ -17,7 +24,7 @@ body {
     height: ;
     top: 0;
     left: 0;
-    padding-right: 100px;
+    padding-right: 10em;
     border-top: 0;
     border-bottom: 1px solid #DDD;
     z-index: 999;
@@ -29,6 +36,11 @@ body {
     padding: 0px 15px;
     box-sixing: border-box;
     z-index: 999;
+}
+@media only screen and (max-width: 500px) {
+    .name {
+        font-size: 1em;
+    }
 }
 .top-navigation .name {
     float: left;
@@ -58,12 +70,23 @@ body {
     margin-left: 25px;
     color:#838994;
 }
+.top-navigation .links li:hover {
+    display: inline-block;
+    margin-left: 25px;
+    color: black;
+}
 .top-navigation a {
     background-color: transparent;
     text-decoration: none;
     color: #4c5058;
 }
 /* Background */
+@media only screen and (max-width: 500px) {
+    .feature-image {
+        width: 30%;
+        height: 30%;
+    }
+}
 .feature-image {
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -83,9 +106,6 @@ body {
     left: 0;
     z-index: -1; 
 }
-.introduction {
-}
-
 /*  Circle Content */
 .circle {
     background-color: #fff;
@@ -111,6 +131,7 @@ body {
     line-height: 200%;
     padding-top: 75px;
     text-align: center;
+    margin-top: -10px;
 }
 .down-arrow {
     margin-left: 170px;
@@ -148,11 +169,13 @@ body {
 .profile .first-p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.1em;
+    font-weight: 300;
 }
 .profile p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.1em;
     display: block;
+    font-weight: 300;
 
 }
 /* Projects */
@@ -209,23 +232,6 @@ body {
 .contact {
     margin-top: 800px;
 }
-.contact .big-button {
-    text-shadow: none;
-    text-align: center;
-    border-style: none;
-    border-radius: 4px;
-    padding: 16px 26px;
-    line-height: 1.33;
-    background-color: #f15a29;
-    border-color: #f15a29;
-    width: 11rem;
-    color: white;
-    font-size: 1.125rem;
-    margin-top: 50px;
-    margin-left: 600px;
-    display: block;
-    -webkit-font-smoothing: antialiased;
-}
 .contact .map {
     width: 40%;
     height: 50%;
@@ -235,13 +241,91 @@ body {
 }
 .contact .text {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.1em;
+    font-size: 1.2rem;
+    margin: 1.625rem 0 0.125rem;
+    font-weight: 300;
     display: block;
 }
 .contact .info {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.1em;
+    font-size: 1.2rem;
+    margin: 1.625rem 0 0.125rem;
+    font-weight: 300;
     display: block;
-}
+   
+    line-height: 2px;
+}   
 
 /* Footer */
+.social {
+    background-color: #fff;
+    overflow: auto;
+    padding-bottom: 9.375rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    width: 800px;
+    border-top: 1px solid #ccc;
+    margin-top: 100px;
+}
+.social .content >h5{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin: 1.625rem 0 0.125rem;
+    font-weight: 300;
+    text-align: center;
+
+}
+.social .icons {
+    display: inline;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+.social .icons >ul {
+    list-style: none;
+    
+
+}
+.social .icons >li {
+    border-radius: 1.25rem;
+    box-sizing: border-box;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    margin: 1.25rem 5px;
+    border: 1px solid #eaebec;
+    padding: 0.625rem 0;
+    text-align: center;
+    vertical-align: baseline;
+}
+.social .copy {
+    color: LightGray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin: 1.625rem 0 3.125rem;
+    font-weight: 300;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+}
+.fa-twitter:before {
+    content: "\f099";
+    color: #55acee;
+}
+.fa-facebook:before {
+    color: #4c66a4;
+}
+.fa-instagram:before {
+    color: #3f729b;
+}
+.fa-github:before {
+
+}
