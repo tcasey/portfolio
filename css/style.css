@@ -155,7 +155,7 @@ body {
     border-radius: 5em;
     float: left;
     margin-top: ;
-    padding: 20px;
+    padding: 2em;
 }
 .profile .header {
     font-family: 'nevis', helvetica, tahoma, arial, sans-serif;
@@ -213,7 +213,7 @@ body {
     height: 25rem;
     display: block;
     text-align: center;
-    border-radius: 3px;
+    border-radius: 4em;
     margin-top: 50px;
     margin-left: 200px;
     margin-bottom: 50px;
@@ -223,7 +223,7 @@ body {
     height: 50%;
     display: block;
     text-align: center;
-    border-radius: 3px;
+    border-radius: 4em;
     margin-top: -450px;
     margin-left: 600px;
     margin-bottom: 200px;
@@ -231,6 +231,7 @@ body {
 /* Contact */
 .contact {
     margin-top: 800px;
+    padding: 1em;
 }
 .contact .map {
     width: 40%;
