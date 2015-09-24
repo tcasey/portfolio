@@ -52,7 +52,7 @@ body {
     font-size: 2.04rem;
     margin-top: 0.4rem;
     margin-right: 20px;
-    margin-left: -140px;
+    margin-left: -2em;
     -webkit-font-smoothing: antialiased;
 }
 .top-navigation .links {
@@ -181,57 +181,74 @@ body {
 /* Projects */
 .projects {
     background-color: grey;
-    padding: 0;
-    width: 100%;
+    padding: 3em;
+    width: 80em;
     position: absolute;
     margin-left: -8px;
+    padding: 0.625rem 0;
+    text-align: center;
+
 }
 .projects .header {
     font-family: 'nevis', helvetica, tahoma, arial, sans-serif;
-    font-weight: ;
     letter-spacing: 0.3em;
     text-transform: uppercase;
     color: #838994;
     font-size: 2.04rem;
     width: 100%;
-    padding: 40px 0;
-    top: 0;
-    left: 0;
-    border-top: 0;
+    padding: 2.5em 0;
     border-bottom: 1px solid #DDD;
     background-color: grey;
     text-align: center;
     color: white;
     font-size: 1.9rem;
-    margin-top: 0px;
-    margin-left: ;
     display: block;
     -webkit-font-smoothing: antialiased;
 }
-.projects .NYT-Hack {
-    width: 15rem;
-    height: 25rem;
-    display: block;
+.projects >ul {
+    white-space: nowrap;
+    display: inline;
+    padding: 0.625rem 0;
     text-align: center;
+    list-style: none;
+}
+.NYT-Hack, .Karma, .streetFighter {
+    display: block;
     border-radius: 4em;
-    margin-top: 50px;
-    margin-left: 200px;
-    margin-bottom: 50px;
+    padding: 1em;
+}
+.projects .NYT-Hack {
+    width: 20%;
+    height: 15%;
 }
 .projects .Karma {
-    width: 50%;
-    height: 50%;
-    display: block;
-    text-align: center;
-    border-radius: 4em;
-    margin-top: -450px;
-    margin-left: 600px;
-    margin-bottom: 200px;
+    width: 35%;
+    height: 35%;
+}
+.projects .streetFighter {
+    width: 30%;
+    height: 30%;
 }
 /* Contact */
 .contact {
-    margin-top: 800px;
-    padding: 1em;
+    margin-top: 65em;
+    padding: 3em;
+}
+.contact .header {
+    font-family: 'nevis', helvetica, tahoma, arial, sans-serif;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: grey;
+    font-size: 2.04rem;
+    width: 100%;
+    padding: 2.5em 0;
+    border-bottom: 1px solid #DDD;
+    background-color: white;
+    text-align: center;
+    font-size: 1.9rem;
+    margin-top: 0px;
+    display: block;
+    -webkit-font-smoothing: antialiased;
 }
 .contact .map {
     width: 40%;
@@ -247,13 +264,12 @@ body {
     font-weight: 300;
     display: block;
 }
-.contact .info {
+.contact .info, .email {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     margin: 1.625rem 0 0.125rem;
     font-weight: 300;
-    display: block;
-   
+    display: block; 
     line-height: 2px;
 }   
 
