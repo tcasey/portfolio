@@ -21,11 +21,9 @@ body {
     background-color: #fff;
     position: fixed;
     width: 100%;
-    height: ;
     top: 0;
     left: 0;
     padding-right: 10em;
-    border-top: 0;
     border-bottom: 1px solid #DDD;
     z-index: 999;
 }
@@ -99,10 +97,10 @@ body {
     min-width: 1024px;
     /* Set up proportionate scaling */
     width: 100%;
-    height: auto;
+    height: 50em;
     /* Set up positioning */
     position: absolute;
-    top: 50px;
+    top: 3em;
     left: 0;
     z-index: -1; 
 }
@@ -135,27 +133,18 @@ body {
 }
 .down-arrow {
     margin-left: 170px;
+
 }
 
 /* Profile */
-.profile {
+#profile {
     display: block;
-    margin: 0;
-    margin-top: 1000px;
-    padding: 20px;
-    border: 0;
+    margin-top: 54em;
+    padding: 2em;
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
     z-index: 999;
-}
-.selfie {
-    width: 35%;
-    height: 35%;
-    border-radius: 5em;
-    float: left;
-    margin-top: ;
-    padding: 2em;
 }
 .profile .header {
     font-family: 'nevis', helvetica, tahoma, arial, sans-serif;
@@ -166,17 +155,18 @@ body {
     font-size: 2.04rem;
     width: 100%;
 }
-.profile .first-p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.1em;
-    font-weight: 300;
+.selfie {
+    width: 35%;
+    height: 35%;
+    border-radius: 5em;
+    float: left;
+    padding: 2em;
 }
 .profile p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.1em;
     display: block;
     font-weight: 300;
-
 }
 /* Projects */
 .projects {
@@ -184,7 +174,7 @@ body {
     padding: 3em;
     width: 80em;
     position: absolute;
-    margin-left: -8px;
+    margin-left: -0.5em;
     padding: 0.625rem 0;
     text-align: center;
 
@@ -206,24 +196,22 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 .projects >ul {
-    white-space: nowrap;
-    display: inline;
     padding: 0.625rem 0;
-    text-align: center;
     list-style: none;
 }
 .NYT-Hack, .Karma, .streetFighter {
     display: block;
     border-radius: 4em;
     padding: 1em;
+
 }
 .projects .NYT-Hack {
     width: 20%;
     height: 15%;
 }
 .projects .Karma {
-    width: 35%;
-    height: 35%;
+    width: 30%;
+    height: 14.313em;
 }
 .projects .streetFighter {
     width: 30%;
@@ -246,7 +234,6 @@ body {
     background-color: white;
     text-align: center;
     font-size: 1.9rem;
-    margin-top: 0px;
     display: block;
     -webkit-font-smoothing: antialiased;
 }
@@ -315,8 +302,8 @@ body {
 .social .icons >li {
     border-radius: 1.25rem;
     box-sizing: border-box;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 5%;
+    height: 5%;
     display: inline-block;
     margin: 1.25rem 5px;
     border: 1px solid #eaebec;
