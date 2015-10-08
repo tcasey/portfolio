@@ -198,28 +198,20 @@ body {
 .projects >ul {
     padding: 0.625rem 0;
     list-style: none;
+    display: inline-flex;
 }
-.NYT-Hack, .Karma, .streetFighter {
-    display: block;
-    border-radius: 4em;
+.SmartShopper, .Karma, .streetFighter {
+    border-radius: 2em;
     padding: 1em;
 
 }
-.projects .NYT-Hack {
-    width: 20%;
-    height: 15%;
-}
-.projects .Karma {
-    width: 30%;
-    height: 14.313em;
-}
-.projects .streetFighter {
-    width: 30%;
-    height: 30%;
+.projects .SmartShopper, .Karma, .streetFighter {
+    width: 380px;
+    height: 190px;
 }
 /* Contact */
 .contact {
-    margin-top: 65em;
+    margin-top: 28em;
     padding: 3em;
 }
 .contact .header {
@@ -241,7 +233,7 @@ body {
     width: 40%;
     height: 50%;
     float: right;
-    padding: 20px;
+    padding: 1.5em;
     border-radius: 3em;
 }
 .contact .text {
