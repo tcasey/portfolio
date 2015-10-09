@@ -1,4 +1,4 @@
-body {
+html {
     background: linear-gradient(to right,  rgba(25,74,77,1) 1%,rgba(102,153,82,1) 100%);
     background-repeat: no-repeat;
 }
@@ -150,7 +150,7 @@ body {
   transition: all 0.5s;
 }
 
-@keyframes szerokosc {
+@keyframes szerokosc  {
   0%  {
      background-color: beige;
   }  
@@ -239,13 +239,12 @@ body {
 .projects >ul {
     padding: 0.625rem 0;
     list-style: none;
-    display: inline-flex;
-
+    display: ;
 }
 .SmartShopper:hover,
 .Karma:hover, 
 .streetFighter:hover {
-  transform: scale(1.15);
+  transform: scale(1.35);
   transition: all 0.5s;
 }
 .SmartShopper, .Karma, .streetFighter {
@@ -294,7 +293,6 @@ body {
     font: inherit;
     vertical-align: baseline;
     box-sizing: border-box;
-    width: 800px;
     border-top: 1px solid #ccc;
     margin-top: 100px;
 }
@@ -317,14 +315,12 @@ body {
 }
 .social .icons >ul {
     list-style: none;
-    
-
 }
 .social .icons >li {
-    border-radius: 1.25rem;
+    border-radius: 100%;
     box-sizing: border-box;
-    width: 5%;
-    height: 5%;
+    width: 2.4em;
+    height: 2.4em;
     display: inline-block;
     margin: 1.25rem 5px;
     border: 1px solid #eaebec;
