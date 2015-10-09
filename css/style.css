@@ -2,7 +2,7 @@ html {
     box-sizing: border-box;
 }
 body {
-    background-color: ;
+    background: linear-gradient(to right,  rgba(25,74,77,1) 1%,rgba(102,153,82,1) 100%);
 }
 
 .content-wrap {
@@ -112,7 +112,6 @@ body {
   border-radius: 50%;
   margin: 50px auto;
   margin-top: 15em;
-  background: url(http://i.imgur.com/dUaLwNz.png);
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -137,76 +136,83 @@ body {
   height: 282px;
   text-align: center;
   line-height: 2em;
-  font-family: 'Roboto', sans-serif;
-  
+  font-family: 'Exo', sans-serif;
+  font-weight: 300;
   font-size: 2em;
   color: rgba(0, 0, 0, 0.32);
   background: #eee;
   margin: 0 auto;
-  border-radius: 50%;
-  box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.14), inset 1px 1px 2px 2px rgba(255, 255, 255, 1);
+  border-radius: 100%;
   transition: all 0.3s;
   cursor: pointer;
 }
 
 .circle:hover {
   transform: scale(1.28);
-  transition: all 0.5s;
+  transition: all 1s;
 }
 
 @keyframes szerokosc {
   0%  {
-     background-color: beige;
+     background-color: LightGray;
   }  
   25% {
-    background-color: LightGray;
+    background-color: beige;
   }
   50% {
-    background-color: beige;
-  }
-  75% {
     background-color: LightGray;
   }
-100% {
+  75% {
     background-color: beige;
+  }
+100% {
+    background-color: LightGray;
   } 
 }
 
 @-webkit-keyframes szerokosc {
   0%  {
-     background-color: beige;
-  }
+     background-color: rgba(25,74,77,1);
+  }  
   25% {
-    background-color: LightGray;
+    background-color: rgba(102,153,82,1);
   }
   50% {
-    background-color: beige;
+    background-color: rgba(25,74,77,1);
   }
   75% {
-    background-color: LightGray;
+    background-color: rgba(102,153,82,1);
   }
-  100% {
-    background-color: beige;
+100% {
+    background-color: rgba(25,74,77,1);
   } 
 }
 /* Profile */
 #profile {
     display: block;
-    margin-top: 15em;
+    margin-top: 13em;
     padding: 2em;
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
     z-index: 999;
 }
-.profile .header {
+.profile .header,
+.projects .header,
+.contact .header {
     font-family: 'nevis', helvetica, tahoma, arial, sans-serif;
-    text-align: center;
     letter-spacing: 0.3em;
     text-transform: uppercase;
-    color: #838994;
+    color: white;
+    background-color: transparent;
     font-size: 2.04rem;
     width: 100%;
+    padding: 2.5em 0;
+    border-bottom: 1px solid #DDD;
+    text-align: center;
+    font-size: 1.9rem;
+    display: block;
+    -webkit-font-smoothing: antialiased;
 }
 .selfie {
     width: 35%;
@@ -220,67 +226,42 @@ body {
     font-size: 1.1em;
     display: block;
     font-weight: 300;
+    color: white;
 }
 /* Projects */
 .projects {
-    background-color: grey;
+    background-color: transparent;
     padding: 3em;
     width: 80em;
     position: absolute;
     margin-left: -0.5em;
     padding: 0.625rem 0;
     text-align: center;
-
-}
-.projects .header {
-    font-family: 'nevis', helvetica, tahoma, arial, sans-serif;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: #838994;
-    font-size: 2.04rem;
-    width: 100%;
-    padding: 2em 0;
-    border-bottom: 1px solid #DDD;
-    background-color: grey;
-    text-align: center;
-    color: white;
-    font-size: 1.9rem;
-    display: block;
-    -webkit-font-smoothing: antialiased;
+    margin-top: 3em;
 }
 .projects >ul {
     padding: 0.625rem 0;
     list-style: none;
     display: inline-flex;
 }
-.SmartShopper, .Karma, .streetFighter {
+.SmartShopper, 
+.Karma, 
+.streetFighter {
     border-radius: 2em;
     padding: 1em;
-
-}
-.projects .SmartShopper, .Karma, .streetFighter {
     width: 380px;
     height: 190px;
 }
+.SmartShopper:hover,
+.Karma:hover,
+.streetFighter:hover {
+  transform: scale(1.15);
+  transition: all 0.5s;
+}
 /* Contact */
 .contact {
-    margin-top: 27em;
+    margin-top: 34em;
     padding: 3em;
-}
-.contact .header {
-    font-family: 'nevis', helvetica, tahoma, arial, sans-serif;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: grey;
-    font-size: 2.04rem;
-    width: 100%;
-    padding: 2.5em 0;
-    border-bottom: 1px solid #DDD;
-    background-color: white;
-    text-align: center;
-    font-size: 1.9rem;
-    display: block;
-    -webkit-font-smoothing: antialiased;
 }
 .contact .map {
     width: 40%;
@@ -295,6 +276,7 @@ body {
     margin: 1.625rem 0 0.125rem;
     font-weight: 300;
     display: block;
+    color: white;
 }
 .contact .info, .email {
     font-family: 'Roboto', sans-serif;
@@ -303,6 +285,7 @@ body {
     font-weight: 300;
     display: block; 
     line-height: 2px;
+    color: white;
 }   
 
 /* Footer */
@@ -321,6 +304,7 @@ body {
     width: 800px;
     border-top: 1px solid #ccc;
     margin-top: 100px;
+    background-color: transparent;
 }
 .social .content >h5{
     font-family: 'Roboto', sans-serif;
@@ -328,7 +312,7 @@ body {
     margin: 1.625rem 0 0.125rem;
     font-weight: 300;
     text-align: center;
-
+    color: white;
 }
 .social .icons {
     display: inline;
@@ -355,6 +339,7 @@ body {
     padding: 0.625rem 0;
     text-align: center;
     vertical-align: baseline;
+    background-color: white;
 }
 .social .copy {
     color: LightGray;
