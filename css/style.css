@@ -1,8 +1,6 @@
-html {
-    box-sizing: border-box;
-}
 body {
     background: linear-gradient(to right,  rgba(25,74,77,1) 1%,rgba(102,153,82,1) 100%);
+    background-repeat: no-repeat;
 }
 
 .content-wrap {
@@ -109,7 +107,7 @@ body {
   overflow: hidden;
   width: 360px;
   height: 360px;
-  border-radius: 50%;
+  border-radius: 100%;
   margin: 50px auto;
   margin-top: 15em;
   display: -webkit-box;
@@ -121,7 +119,7 @@ body {
   -webkit-align-items: center;
   -moz-align-items: center;
   border: 1px solid: transparent;
-  box-shadow: inset 0px 0px 35px 10px rgba(0, 0, 0, 0.32), -2px -2px 0px 2px rgba(255, 255, 255, 0.13);
+  box-shadow: inset 0px 0px 35px 10px rgba(0, 0, 0, 0.12), -2px -2px 0px 2px rgba(255, 255, 255, 0.13);
   transition: all 0.9s;
   animation-name: szerokosc;
   animation-duration: 5s;
@@ -143,7 +141,6 @@ body {
   background: #eee;
   margin: 0 auto;
   border-radius: 50%;
-  
   transition: all 0.3s;
   cursor: pointer;
 }
@@ -158,13 +155,13 @@ body {
      background-color: beige;
   }  
   25% {
-    background-color: LightGray;
+    background-color: #eee;
   }
   50% {
     background-color: beige;
   }
   75% {
-    background-color: LightGray;
+    background-color: #eee;
   }
 100% {
     background-color: beige;
@@ -174,17 +171,17 @@ body {
 @-webkit-keyframes szerokosc {
   0%  {
      background-color: beige;
-  }
+  }  
   25% {
-    background-color: LightGray;
+    background-color: #eee;
   }
   50% {
     background-color: beige;
   }
   75% {
-    background-color: LightGray;
+    background-color: #eee;
   }
-  100% {
+100% {
     background-color: beige;
   } 
 }
@@ -196,7 +193,7 @@ body {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    z-index: 999;
+    z-index: 200;
 }
 .contact .header,
 .projects .header,
@@ -232,18 +229,18 @@ body {
 /* Projects */
 .projects {
     background-color: transparent;
-    padding: 3em;
-    width: 80em;
-    position: absolute;
-    margin-left: -0.5em;
     padding: 0.625rem 0;
     text-align: center;
     margin-top: 5em;
+}
+.projects .header{
+    border-bottom: none;
 }
 .projects >ul {
     padding: 0.625rem 0;
     list-style: none;
     display: inline-flex;
+
 }
 .SmartShopper:hover,
 .Karma:hover, 
@@ -254,14 +251,13 @@ body {
 .SmartShopper, .Karma, .streetFighter {
     border-radius: 2em;
     padding: 1em;
-}
-.projects .SmartShopper, .Karma, .streetFighter {
-    width: 380px;
-    height: 190px;
+    width: 23.75em;
+    height: 11.875em;
+    margin-left: 7px;
 }
 /* Contact */
 .contact {
-    margin-top: 37em;
+    margin-top: 4em;
     padding: 3em;
 }
 .contact .map {
@@ -271,7 +267,9 @@ body {
     padding: 1.5em;
     border-radius: 3em;
 }
-.contact .text {
+.contact .text,
+.contact .info, 
+.email {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     margin: 1.625rem 0 0.125rem;
@@ -280,13 +278,7 @@ body {
     color: white;
 }
 .contact .info, .email {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
-    margin: 1.625rem 0 0.125rem;
-    font-weight: 300;
-    display: block; 
     line-height: 2px;
-    color: white;
 }   
 
 /* Footer */
