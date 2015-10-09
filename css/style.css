@@ -105,41 +105,94 @@ body {
     z-index: -1; 
 }
 /*  Circle Content */
+.circle-h {
+  overflow: hidden;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  margin: 50px auto;
+  margin-top: 15em;
+  background: url(http://i.imgur.com/dUaLwNz.png);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; 
+  align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  border: 1px solid: transparent;
+  box-shadow: inset 0px 0px 35px 10px rgba(0, 0, 0, 0.32), -2px -2px 0px 2px rgba(255, 255, 255, 0.13);
+  transition: all 0.3s;
+  animation-name: szerokosc;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: szerokosc;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
 .circle {
-    background-color: #fff;
-    border-radius: 100%;
-    margin-left: -200px;
-    margin-top: -50px;
-    height: 400px;
-    width: 400px;
-    opacity: 0.7;
-    filter: alpha(opacity=50);
-    zoom: 1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 1;
-}
-.circle-text {
-    color: #333;
-    font-family: 'Exo',sans-serif;
-    font-size: 2.04rem;
-    font-weight: 500;
-    letter-spacing: .20em;
-    line-height: 200%;
-    padding-top: 75px;
-    text-align: center;
-    margin-top: -10px;
-}
-.down-arrow {
-    margin-left: 170px;
-
+  width: 282px;
+  height: 282px;
+  text-align: center;
+  line-height: 2em;
+  font-family: 'Roboto', sans-serif;
+  
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.32);
+  background: #eee;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.14), inset 1px 1px 2px 2px rgba(255, 255, 255, 1);
+  transition: all 0.3s;
+  cursor: pointer;
 }
 
+.circle:hover {
+  transform: scale(1.28);
+  transition: all 0.5s;
+}
+
+@keyframes szerokosc {
+  0%  {
+     background-color: beige;
+  }  
+  25% {
+    background-color: LightGray;
+  }
+  50% {
+    background-color: beige;
+  }
+  75% {
+    background-color: LightGray;
+  }
+100% {
+    background-color: beige;
+  } 
+}
+
+@-webkit-keyframes szerokosc {
+  0%  {
+     background-color: beige;
+  }
+  25% {
+    background-color: LightGray;
+  }
+  50% {
+    background-color: beige;
+  }
+  75% {
+    background-color: LightGray;
+  }
+  100% {
+    background-color: beige;
+  } 
+}
 /* Profile */
 #profile {
     display: block;
-    margin-top: 54em;
+    margin-top: 15em;
     padding: 2em;
     font-size: 100%;
     font: inherit;
@@ -186,7 +239,7 @@ body {
     color: #838994;
     font-size: 2.04rem;
     width: 100%;
-    padding: 2.5em 0;
+    padding: 2em 0;
     border-bottom: 1px solid #DDD;
     background-color: grey;
     text-align: center;
@@ -211,7 +264,7 @@ body {
 }
 /* Contact */
 .contact {
-    margin-top: 28em;
+    margin-top: 27em;
     padding: 3em;
 }
 .contact .header {
