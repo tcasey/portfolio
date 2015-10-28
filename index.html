@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- links -->
-	<link rel="stylesheet" href="css/style.css">
-	<script src="http://code.jquery.com/jquery.min.js"></script>
-	<script src="js/app.js"></script>
-	<section class="introduction">
-		<div class="content">
-		</div>
-	</section>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0">
-	<title>Trevor Casey - Portfolio</title>
+
+	<!--Stylesheets-->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Quicksand:400,300' rel='stylesheet' type='text/css'>
+
+	<!--Javascript-->
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/jquery.lettering-0.6.1.min.js"></script>
+	<script src="js/jquery.fittext.js"></script>
+	<script src="slippry-1.2.9/dist/slippry.min.js"></script>
+	<script src="js/app.js"></script>
+	<title>Trevor Casey | Portfolio |</title>
 	
 </head>
 <body>
@@ -23,18 +28,23 @@
 </div>
 </div>
 <!-- nav bar -->
-<nav class="top-navigation">
-	<div class="content">
-		<div class="name">Trevor Casey</div>
-		<ul class="links">
-    		<a href="#profile"><li>Profile</li></a>
-    		<a href="#projects"><li>Projects</li></a>
-    		<a href="#contact"><li>Contact</li></a>
-		</ul>
 
-	</div>
+<nav class="navigation">
+		
+		<!--NAVIGATION.CONTAINER // Contains "Trevor" logo and nav links-->
+		<div class="navigation-container">
+			<a href="index.html" class="logo">Trevor</a>
+			<ul class="menu">
+				<li><a href="#profile">About</a></li>
+				<li><a href="#projects">Work</a></li>
+				<li><a href="#social">Contact</a></li>
+			</ul>
+		</div>
 </nav>
+
+
 <!-- circle -->	
+	<div class="circle-section">
 		<div class="circle-h">
 			<div class="circle">
 					Hello.
@@ -43,24 +53,74 @@
 				<br>
 					I write code.
 				<br>
+				<div class="goDown">
 					<a href="#profile"> 
 						<img class="down-arrow" src="images/arrow2.svg" width="60" height="60">
-					</a>	
+					</a>
+				</div>		
 			</div>
 		</div>	
+	</div>	
 <!-- profile -->
 <section id="profile" class="profile">	
   <h1 class="header">Profile</h1>
-<img src="images/profile-pic.jpg" class="selfie"/>
-<p class="first-p">Currently I'm attending the University of Utah as an Information Systems student. I aspire to become a software engineer and have decided to step up my web development game to the next level, thanks <b>thinkful</b>! I'll be the first to admit that I'm a nerd but hopefully it'll pay off by putting some good money in my pocket. As a child  I always had an interest engineering, I'd take things apart to see how they worked and then put them back together. Withnin the last couple years I got into road biking and I absolutely love it. What once started as an affordable means of transportation, has transformed into a full out passion. Now I strive to combine all these passions with my new found love, coding</p>
-	
-<p>I was born in Napa California where most of my family still resides. When I was about 2 my family moved to a small town in central California where I spent the majority of my life. After highschool I made the decision to serve a mission in Honduras, I was there for 2 years. Currently I'm residing in Salt Lake City, UT and have hopes of being able to move to Washington/Oregon after school.</p>
+		<div class="container">
+				<div class="info">
+					<div class="outerRim">
+					<div class="userPic">	
+					</div>
+					</div>
 
-<p>My background is mainly business oriented. I have my AS degree in accounting and then decided to combine my two loves for my undergraduates degree, business and coding. Now I'm an <b>Information Systems</b> student and I'm loving it!</p>  
+					<p>Hey there, I'm Trevor Casey.</p>
+					<p>I'm a creative professional and front-end developer with a penchant for clean code and hard puzzles.</p>
+					<p>I'm currently studying Information Systems at the University of Utah.</p>  
+					<p>Check out my <a href="resume.pdf">resume</a>
+					<p>Lover of the outdoors.
+					<p>I currently live Salt Lake City, but I'm open to new adventures elsewhere.</p>
+				</div>
+				<div class="slc">
+					<img src="images/slc.jpg" alt="A map of SLC and its neighborhoods.">
+				</div>
+		</div>
 </section>
+
+<!--QUOTE // Contains orange background-->
+		<section class="quote" id="quote">
+			
+			<!--QUOTE.CONTAINER // Contains quote-->
+			<div class="container">
+				<p>"The world always seems brighter when you’ve just made something that wasn’t there before." — Neil Gaiman</p>
+				<h1>Skills</h1>
+				
+				<div class="skillset">
+					<h2>HTML/CSS</h2>
+					<p>HTML5</p>
+					<p>CSS3</p>
+					<p>SASS</p>
+				</div>
+				
+				<div class="skillset">
+					<h2>Javascript</h2>
+					<p>Native Javascript</p>
+					<p>jQuery</p>
+					<p>OOP</p>
+					<p>AJAX</p>
+					<p>JSON</p>
+					<p>APIs</p>
+				</div>
+				
+				<div class="skillset">
+					<h2>Tools/Frameworks</h2>
+					<p>Bootstrap 3</p>
+					<p>Git/Github</p>
+					<p>Sublime Text 3</p>
+				</div>
+			</div>
+		</section>
+
 <!-- projects -->
 <section id="projects" class="projects">	
-	<div class="header">Current Projects</div>
+	<div class="header">Work</div>
 		<ul class="image-links">
 		<li class="SS">	
   			<a href="http://tcasey.github.io/SmartShopper/main.html"><img src="images/SmartShopper.jpg" class="SmartShopper"></a>
@@ -72,36 +132,27 @@
 <a href="http://tcasey.github.io/streetFighter/main.html"><img src="images/streetFighter.jpg" class="streetFighter"></a>
 		</ul>
   </section>
+
 <!-- contact -->
-<section id="contact" class="contact">
-	<!--Contact Trevor</button> -->
-	<div class="header">Contact</div>
-	<img src="images/Map.jpg" class="map"/>
-<p class="text">I'm currently residing in Salt Lake City, UT. If you need to to get in touch with me, or have questions, feel free to use any of the contact methods below to reach me. (Hint: your best bet is Twitter.) Available Monday through Friday from 9-5 p.m. MDT.</p>
-&nbsp;
-<p class="info">313 E 3rd Avenue</p>
-<p class="info">Salt Lake City, UT 84103</p>
-&nbsp;
-<p class="email">trevort.casey@icloud.com</p>
-</section>
+
 </div>
 </body>
-<footer class="social">
+<footer id="social" class="social">
     <div class="content">
-    	<h5>Feel free to follow me</h5>
+    	<h5>Get In Touch</h5>
         	<ul class="icons">
             	<li>
                 	<a href="https://twitter.com/_tcasey_"><i class="fa fa-twitter"></i></a>
             	</li>
             	<li>
-              	   <a href="https://www.facebook.com/trevor.t.casey"><i class="fa fa-facebook"></i></a>
-            	</li>
-            	<li>
-            	   <a href="https://instagram.com/_tcasey_/"><i class="fa fa-instagram"></i></a>
-           		</li>
+					<a href="https://www.linkedin.com/pub/trevor-casey/75/8b8/128"><i class="fa fa-linkedin-square"></i></a>
+						</li>
            		<li>
            		   <a href="https://github.com/tcasey"><i class="fa fa-github"></i></a>
-           		</li>   
+           		</li>
+           		<li>
+					<a href="mailto:trevort.casey@icloud.com"><i class="fa fa-envelope"></i></a>
+						</li>   
        		 </ul>
      </div>  		 
 		<span class="copy">
