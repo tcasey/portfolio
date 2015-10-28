@@ -92,8 +92,8 @@ img {
 }
 
 .navigation-visible {
-  background-color: beige;
-  border-bottom: 1px solid #ccc;
+  background: linear-gradient(to right,  rgba(25,74,77,1) 1%,rgba(102,153,82,1) 100%);
+  border-bottom: 1px solid #F9F1DD;
   margin-top: -46em;
 }
 
@@ -104,8 +104,9 @@ img {
   }
 
     .logo, .navigation-container a {
-      font-family: 'Quicksand', sans-serif;
-      color: #3b3b3b;
+      font-family: 'Quicksand';
+      font-weight: 400;
+      color: #F9F1DD;
     }
 
     .navigation-container .logo {
@@ -256,7 +257,7 @@ img {
     font: inherit;
     vertical-align: baseline;
     z-index: 200;
-    height: 50em;
+    height: 55em;
     background-color: #3b3b3b;
     overflow: hidden;
 }
@@ -306,8 +307,8 @@ img {
        
         /* "Absolute Centering" */
         margin: auto;
-          position: absolute;
-          top: 0; left: 0; bottom: 0; right: 0;
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
       }
 
     .info p {
@@ -336,16 +337,18 @@ img {
 /* Quote ----------------------------------------------- */
 
 .quote {
-  background-color: #fe5a19;
+  background-color: #F9F1DD;
 }
   .quote .container p, h1, .skillset h2, ul{
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-family: 'Quicksand';
     font-weight: 400;
     text-align: center;
-    color: #F3F3F1;
+    color: #3b3b3b;
 }
-  
+  .quote .container {
+    padding: 5em;
+  } 
   .quote h1 {
     margin: 1em 0;
     font-weight: bold;
@@ -356,8 +359,8 @@ img {
   }
     .skillset h2 {
       margin-top: 1em;
-      color: #fec700; 
-      font-weight: bold;
+      color: #fe4800; 
+      font-weight: 400;
     }
     .skillset p {
         display: inline;
@@ -367,10 +370,9 @@ img {
 
 /* Projects */
 .projects {
-    background-color: transparent;
+    background-color: #3b3b3b;
     padding: 0.625rem 0;
     text-align: center;
-    margin-top: 5em;
 }
 .projects .header{
     border-bottom: none;
@@ -380,12 +382,13 @@ img {
     list-style: none;
     display: ;
 }
-.SmartShopper:hover,
+/* .SmartShopper:hover,
 .Karma:hover, 
 .streetFighter:hover {
   transform: scale(1.35);
   transition: all 0.5s;
-}
+} 
+*/
 .SmartShopper, .Karma, .streetFighter {
     border-radius: 2em;
     padding: 1em;
@@ -409,14 +412,14 @@ img {
     font: inherit;
     vertical-align: baseline;
     box-sizing: border-box;
-    border-top: 1px solid #ccc;
-    margin-top: 100px;
+    height: 20em;
+   
 }
 .social .content >h5{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 1rem;
     margin: 1.625rem 0 0.125rem;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
     color: white;
 }
@@ -440,14 +443,14 @@ img {
     display: inline-block;
     margin: 1.25rem 5px;
     border: 1px solid #eaebec;
-    padding: 0.625rem 0;
+    padding: 0.325rem 0;
     text-align: center;
     vertical-align: baseline;
     background-color: white;
 }
 .social .copy {
     color: LightGray;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 1rem;
     margin: 1.625rem 0 3.125rem;
     font-weight: 300;
@@ -461,11 +464,11 @@ img {
 .fa-envelope:before {
     color: #4c66a4;
 }
-.fa-linkedin:before {
-    color: #55acee;
+.fa-linkedin-square:before {
+    color: rgb(0, 123, 181);
 }
 .fa-github:before {
-
+    color: purple;
 }
 /* Media Queries -----------------------------------------------*/
 
