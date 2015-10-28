@@ -135,15 +135,15 @@ img {
 /* Background */
 
 .feature-image {
-    background-position: center bottom;
+
     background-repeat: no-repeat;
-    background-size: cover;
+   
     height: 50rem;
    
     margin: 0;
     /* Set rules to fill background */
     min-height: 100%;
-    min-width: 1024px;
+    min-width: 1280px;
     /* Set up proportionate scaling */
     width: 100%;
     height: 45em;
@@ -155,7 +155,6 @@ img {
 /*  Circle Content */
 .circle-section {
   text-align: center;
-  vertical-align: center;
   margin-top: -33em;
 }
 .circle-h {
@@ -338,6 +337,7 @@ img {
 
 .quote {
   background-color: #F9F1DD;
+  overflow: hidden;
 }
   .quote .container p, h1, .skillset h2, ul{
     font-size: 1.3em;
@@ -373,6 +373,7 @@ img {
     background-color: #3b3b3b;
     padding: 0.625rem 0;
     text-align: center;
+    overflow: hidden;
 }
 .projects .header{
     border-bottom: none;
