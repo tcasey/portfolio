@@ -157,7 +157,7 @@ img {
   height: 360px;
   border-radius: 100%;
   margin: 50px auto;
-  margin-top: -14em;
+  vertical-align: center;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -388,7 +388,6 @@ img {
     padding: 1em;
     width: 23.75em;
     height: 11.875em;
-    margin-left: 7px;
 }
 /* Contact */
    
