@@ -97,43 +97,42 @@ img {
   margin-top: -40em;
 }
 
-  .navigation-container {
+.navigation-container {
     margin: 0 auto;
     max-width: 62.5em;
     padding: 0.50em;
-  }
+}
 
-    .logo, .navigation-container a {
+.logo, .navigation-container a {
       font-family: 'Quicksand';
       font-weight: 400;
       color: #F9F1DD;
-    }
+}
+.navigation .logo {
 
-    .navigation-container .logo {
+}
+.navigation-container .logo {
       display: inline-block;
       font-size: 2em;
       text-transform: uppercase;
       float: left;
       
-    }
+}
 
-    .navigation-container .menu {
+.navigation-container .menu {
       float: right;
-    }
-
-      .navigation-container .menu li {
+}
+.navigation-container .menu li {
         display: inline-block;
         padding-right: 0.75em;
         font-size: 1.25em;
-      }
-
-      .navigation-container .menu a:hover {
+}
+.navigation-container .menu a:hover {
         color: #8C1740;
-      }
-
-      .navigation-container .menu a:active {
+}
+.navigation-container .menu a:active {
         color: #CC4907;
-      }
+}
 /* Background */
 .banner {
   height: 40rem;
