@@ -9,6 +9,13 @@ $(document).ready(function(){
 		}
 	);
     
+    $(".logo").hover(
+        function(){
+            $(this).addClass('animated infinite bounce');
+        }, function(){
+            $(this).removeClass('animated infinite bounce');
+        }
+    );
     //Fades in navbar on down scroll, fades out at top of page                     
     $(window).scroll(function(){  
         if ($(this).scrollTop() > 500) {

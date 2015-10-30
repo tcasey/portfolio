@@ -382,7 +382,7 @@ img {
   transition: all 0.5s;
 } 
 */
-.SmartShopper, .Karma, .streetFighter {
+.quiz, .Karma, .streetFighter, .AJAX {
     border-radius: 2em;
     padding: 1em;
     width: 23.75em;
