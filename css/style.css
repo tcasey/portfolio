@@ -108,9 +108,6 @@ img {
       font-weight: 400;
       color: #F9F1DD;
 }
-.navigation .logo {
-
-}
 .navigation-container .logo {
       display: inline-block;
       font-size: 2em;
@@ -125,10 +122,11 @@ img {
 .navigation-container .menu li {
         display: inline-block;
         padding-right: 0.75em;
-        font-size: 1.25em;
+        font-size: 1.5em;
+       
 }
 .navigation-container .menu a:hover {
-        color: #8C1740;
+        color: #3b3b3b;
 }
 .navigation-container .menu a:active {
         color: #CC4907;
