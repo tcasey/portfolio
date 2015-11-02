@@ -426,6 +426,12 @@ img {
 
 #container {
     opacity: 1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -ms-box-sizing: border-box
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100);
     -webkit-transition: opacity .25s ease-in;
@@ -449,7 +455,7 @@ img {
     border: 0
 }
 
-.touch #grid .item a {
+#grid .item a {
     background: none;
     -webkit-transition: none;
     -moz-transition: none;
@@ -464,9 +470,10 @@ img {
     filter: alpha(opacity=0)
 }
 
-#grid .item .bg {
+#grid .item a img {
     position: absolute;
-   
+    left: -1px;
+    top: -1px;
     z-index: 4;
     width: 102%;
     height: 102%;
@@ -488,11 +495,11 @@ img {
 
 #grid .item a .img_container {
     position: relative;
-    padding-bottom: 100%
+    padding-bottom: 150%;
 }
 
 #grid .item.tall a .img_container {
-    padding-bottom: 150%
+    padding-bottom: 150%;
 }
 /*------------------------------------------------------
                     HOVER
