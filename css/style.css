@@ -383,6 +383,7 @@ img {
     padding: 0;
     -ms-box-sizing: border-box
 }
+<<<<<<< HEAD
 
 #grid {
     font-size: 0;
@@ -428,6 +429,20 @@ img {
     .item {
         display: block !important
     }
+=======
+/* .SmartShopper:hover,
+.Karma:hover, 
+.streetFighter:hover {
+  transform: scale(1.35);
+  transition: all 0.5s;
+} 
+*/
+.quiz, .Karma, .streetFighter, .AJAX {
+    border-radius: 2em;
+    padding: 1em;
+    width: 23.75em;
+    height: 11.875em;
+>>>>>>> c3fd17cc7a8ae817ffb75de6b9f8c5cd75aed2dc
 }
 
 @media screen and (min-width:600px) {
