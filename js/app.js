@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	
+
 	$(".goDown").hover(
 		function(){
 			$(this).addClass('animated infinite bounce');
@@ -26,15 +26,10 @@ $(document).ready(function(){
     });
 
 
-  // change background size on window resize
-  $(window).resize(function() {
-      $(".bg > .ibg-bg").css({
-        width: $(window).outerWidth(),
-        height: $(window).outerHeight()
-      })
-    })
 
 
+
+    
    //Smooth scrolling to each section
    $('a[href*=#]:not([href=#])').click(function() {
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 

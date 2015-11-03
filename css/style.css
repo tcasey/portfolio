@@ -1,3 +1,17 @@
+Skip to content
+This repository  
+Pull requests
+Issues
+Gist
+ @tcasey
+ Unwatch 1
+  Star 0
+  Fork 0 tcasey/portfolio
+ Tree: d56d491260 portfolio/css/style.css
+d56d491  22 hours ago
+@tcasey tcasey Style Edit
+1 contributor
+RawBlameHistory     798 lines (711 sloc)  17.3 KB
 @font-face{ 
   font-family: 'Lot';
   src: url('../fonts/LOT-webfont.eot');
@@ -133,7 +147,7 @@ img {
         color: #3b3b3b;
 }
 .navigation-container .menu a:active {
-        color: #CC4907;
+        color: #fe4800;
 }
 /*------------------------------
             Background
@@ -251,12 +265,12 @@ img {
 --------------------------------*/
 #profile {
     display: block;
-    padding: 2em;
+    padding: 4em;
     font-size: 100%;
     font: inherit;
-    vertical-align: baseline;
-    z-index: 200;
-    height: 65em;
+
+    z-index: 20;
+    height: 100%;
     background-color: #3b3b3b;
     overflow: hidden;
 }
@@ -269,7 +283,7 @@ img {
     color: white;
     font-size: 2.04rem;
     width: 100%;
-    padding: 2.5em 0;
+    padding: 1em;
 
     background-color: transparent;
     text-align: center;
@@ -440,9 +454,6 @@ img {
     -o-transition: opacity .25s ease-in;
     transition: opacity .25s ease-in
 }
-
-
-
 
 
 #grid .item.loading {
@@ -666,85 +677,7 @@ img {
         margin-bottom: -25.1%
     }
 
-    .item.tall.shift1 {
-        -webkit-transform: translate(0%, 33.33333%);
-        -moz-transform: translate(0%, 33.33333%);
-        -ms-transform: translate(0%, 33.33333%);
-        -o-transform: translate(0%, 33.33333%);
-        transform: translate(0%, 33.33333%)
-    }
-
-    .item.tall.shift2 {
-        -webkit-transform: translate(0%, 66.66666500000001%);
-        -moz-transform: translate(0%, 66.66666500000001%);
-        -ms-transform: translate(0%, 66.66666500000001%);
-        -o-transform: translate(0%, 66.66666500000001%);
-        transform: translate(0%, 66.66666500000001%)
-    }
-
-    .item.tall.shift3 {
-        -webkit-transform: translate(0%, 100%);
-        -moz-transform: translate(0%, 100%);
-        -ms-transform: translate(0%, 100%);
-        -o-transform: translate(0%, 100%);
-        transform: translate(0%, 100%)
-    }
-
-    .item.tall.shift4 {
-        -webkit-transform: translate(0%, 133.33333000000002%);
-        -moz-transform: translate(0%, 133.33333000000002%);
-        -ms-transform: translate(0%, 133.33333000000002%);
-        -o-transform: translate(0%, 133.33333000000002%);
-        transform: translate(0%, 133.33333000000002%)
-    }
-
-    .item.tall.shift5 {
-        -webkit-transform: translate(0%, 166.666665%);
-        -moz-transform: translate(0%, 166.666665%);
-        -ms-transform: translate(0%, 166.666665%);
-        -o-transform: translate(0%, 166.666665%);
-        transform: translate(0%, 166.666665%)
-    }
-
-    .item.shift1 {
-        -webkit-transform: translate(0%, 50%);
-        -moz-transform: translate(0%, 50%);
-        -ms-transform: translate(0%, 50%);
-        -o-transform: translate(0%, 50%);
-        transform: translate(0%, 50%)
-    }
-
-    .item.shift2 {
-        -webkit-transform: translate(0%, 100%);
-        -moz-transform: translate(0%, 100%);
-        -ms-transform: translate(0%, 100%);
-        -o-transform: translate(0%, 100%);
-        transform: translate(0%, 100%)
-    }
-
-    .item.shift3 {
-        -webkit-transform: translate(0%, 150%);
-        -moz-transform: translate(0%, 150%);
-        -ms-transform: translate(0%, 150%);
-        -o-transform: translate(0%, 150%);
-        transform: translate(0%, 150%)
-    }
-
-    .item.shift4 {
-        -webkit-transform: translate(0%, 200%);
-        -moz-transform: translate(0%, 200%);
-        -ms-transform: translate(0%, 200%);
-        -o-transform: translate(0%, 200%);
-        transform: translate(0%, 200%)
-    }
-
-    .item.shift5 {
-        -webkit-transform: translate(0%, 250%);
-        -moz-transform: translate(0%, 250%);
-        -ms-transform: translate(0%, 250%);
-        -o-transform: translate(0%, 250%);
-        transform: translate(0%, 250%)
-    }
+    
 }
 
 @media screen and (min-width:900px) {
@@ -794,4 +727,14 @@ img {
     display: none;
   }
 } 
-
+@media only screen and (max-width: 400px) {
+  .circle-h {
+    width: 300px;
+    height: 300px;
+  }
+  .circle {
+    width: 222px;
+    height: 222px;
+    font-size: 1.5em;
+  }
+}
