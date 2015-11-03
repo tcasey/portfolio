@@ -1,6 +1,8 @@
 $(document).ready(function(){
 
 
+
+
 	$(".goDown").hover(
 		function(){
 			$(this).addClass('animated infinite bounce');
@@ -29,7 +31,7 @@ $(document).ready(function(){
 
 
 
-    
+
    //Smooth scrolling to each section
    $('a[href*=#]:not([href=#])').click(function() {
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
