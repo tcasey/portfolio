@@ -578,10 +578,10 @@ img {
 .social {
     background: linear-gradient(to right,  rgba(25,74,77,1) 1%,rgba(102,153,82,1) 100%);
     overflow: auto;
-    padding-bottom: 9.375rem;
+    padding-bottom: 7rem;
     text-align: center;
     margin: 0 auto;
-    padding-top: 4em;
+    padding-top: 2em;
     border: 0;
     font-size: 100%;
     font: inherit;
