@@ -1,17 +1,4 @@
-Skip to content
-This repository  
-Pull requests
-Issues
-Gist
- @tcasey
- Unwatch 1
-  Star 0
-  Fork 0 tcasey/portfolio
- Tree: d56d491260 portfolio/css/style.css
-d56d491  22 hours ago
-@tcasey tcasey Style Edit
-1 contributor
-RawBlameHistory     798 lines (711 sloc)  17.3 KB
+
 @font-face{ 
   font-family: 'Lot';
   src: url('../fonts/LOT-webfont.eot');
@@ -25,8 +12,7 @@ RawBlameHistory     798 lines (711 sloc)  17.3 KB
             Foundation
 --------------------------------*/
 html {
-  background: linear-gradient(to right,  rgba(25,74,77,1) 1%,rgba(102,153,82,1) 100%);
-  background-repeat: no-repeat;
+  background-color: #fff;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -148,6 +134,11 @@ img {
 }
 .navigation-container .menu a:active {
         color: #fe4800;
+}
+.navigation .logo {
+        width:  50px;
+        height: 50px;
+        padding: 10px;
 }
 /*------------------------------
             Background
@@ -582,12 +573,12 @@ img {
             Footer 
 --------------------------------*/
 .social {
-    background-color: transparent;
+    background: linear-gradient(to right,  rgba(25,74,77,1) 1%,rgba(102,153,82,1) 100%);
     overflow: auto;
     padding-bottom: 9.375rem;
     text-align: center;
     margin: 0 auto;
-    padding: 10;
+    padding: 5em;
     border: 0;
     font-size: 100%;
     font: inherit;
@@ -652,7 +643,9 @@ img {
     color: purple;
 }
 
-/* Float Shadow */
+/*------------------------------
+        Float Shadow 
+--------------------------------*/
 .hvr-float-shadow {
   display: inline-block;
   vertical-align: middle;
@@ -687,15 +680,13 @@ img {
   transition-property: transform, opacity;
 }
 .hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
-  -webkit-transform: translateY(-5px);
-  transform: translateY(-5px);
-  /* move the element up by 5px */
+  -webkit-transform: translateY(-4px);
+  transform: translateY(-4px);
 }
 .hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
   opacity: 1;
-  -webkit-transform: translateY(5px);
-  transform: translateY(5px);
-  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
 }
 
 /*------------------------------------------------------

@@ -2,7 +2,6 @@ $(document).ready(function(){
 
 
 
-
 	$(".goDown").hover(
 		function(){
 			$(this).addClass('animated infinite bounce');
