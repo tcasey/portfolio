@@ -96,8 +96,8 @@ img {
 }
 
 .navigation-visible {
-  background: linear-gradient(to right,  rgba(25,74,77,1) 1%,rgba(102,153,82,1) 100%);
-  border-bottom: 1px solid #F9F1DD;
+  background: black;
+  opacity: 0.9;
   margin-top: -40em;
 }
 
@@ -130,7 +130,7 @@ img {
        
 }
 .navigation-container .menu a:hover {
-        color: #3b3b3b;
+        color: #fe4800;
 }
 .navigation-container .menu a:active {
         color: #fe4800;
@@ -139,7 +139,10 @@ img {
         width:  50px;
         height: 50px;
         padding: 10px;
+        vertical-align: center;
+        margin-top: -8px;
 }
+
 /*------------------------------
             Background
 --------------------------------*/
@@ -578,7 +581,7 @@ img {
     padding-bottom: 9.375rem;
     text-align: center;
     margin: 0 auto;
-    padding: 5em;
+    padding: 4em;
     border: 0;
     font-size: 100%;
     font: inherit;
