@@ -136,8 +136,8 @@ img {
         color: #fe4800;
 }
 .navigation .logo {
-        width:  70px;
-        height: 70px;
+        width:  80px;
+        height: 80px;
         padding: 10px;
         vertical-align: center;
         margin-top: -8px;
@@ -178,7 +178,7 @@ img {
   display: inline-flex; 
   align-items: center;
   -webkit-align-items: center;
-  -moz-align-items: center;
+  -moz-align-items: celnter;
   border: 1px solid: transparent;
   box-shadow: inset 0px 0px 35px 10px rgba(0, 0, 0, 0.12), -2px -2px 0px 2px rgba(255, 255, 255, 0.13);
   transition: all 0.9s;

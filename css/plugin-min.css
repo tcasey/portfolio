@@ -2809,7 +2809,7 @@ td, th {
     position: relative
 }
 
-.collection .collection-item.avatar .circle {
+.collection .collection-item.avatar {
     position: absolute;
     width: 42px;
     height: 42px;
@@ -2819,7 +2819,7 @@ td, th {
     vertical-align: middle
 }
 
-.collection .collection-item.avatar i.circle {
+.collection .collection-item.avatar i {
     font-size: 18px;
     line-height: 42px;
     color: #fff;
@@ -3143,9 +3143,6 @@ span.badge.new:after {
     user-select: none
 }
 
-.circle {
-    border-radius: 50%
-}
 
 .center-block {
     display: block;
@@ -6939,15 +6936,6 @@ span.badge.new:after {
     margin: 0
 }
 
- ul li {
-    -webkit-transition: background-color .3s;
-    -moz-transition: background-color .3s;
-    -o-transition: background-color .3s;
-    -ms-transition: background-color .3s;
-    transition: background-color .3s;
-    float: left;
-    padding: 0
-}
 
  ul li:hover,  ul li.active {
     background-color: rgba(0, 0, 0, 0.1)
@@ -7949,14 +7937,6 @@ button.btn-floating {
     transition: none !important
 }
 
-.waves-circle {
-    -webkit-transform: translateZ(0);
-    -moz-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    -o-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%)
-}
 
 .waves-input-wrapper {
     border-radius: 0.2em;
@@ -9658,59 +9638,6 @@ select {
     border-color: inherit
 }
 
-.gap-patch .circle {
-    width: 1000%;
-    left: -450%
-}
-
-.circle-clipper {
-    display: inline-block;
-    position: relative;
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
-    border-color: inherit
-}
-
-.circle-clipper .circle {
-    width: 200%;
-    height: 100%;
-    border-width: 3px;
-    border-style: solid;
-    border-color: inherit;
-    border-bottom-color: transparent !important;
-    border-radius: 50%;
-    -webkit-animation: none;
-    animation: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0
-}
-
-.circle-clipper.left .circle {
-    left: 0;
-    border-right-color: transparent !important;
-    -webkit-transform: rotate(129deg);
-    transform: rotate(129deg)
-}
-
-.circle-clipper.right .circle {
-    left: -100%;
-    border-left-color: transparent !important;
-    -webkit-transform: rotate(-129deg);
-    transform: rotate(-129deg)
-}
-
-.active .circle-clipper.left .circle {
-    -webkit-animation: left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
-    animation: left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both
-}
-
-.active .circle-clipper.right .circle {
-    -webkit-animation: right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
-    animation: right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both
-}
 
 @-webkit-keyframes left-spin {
     from {
