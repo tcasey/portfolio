@@ -136,8 +136,8 @@ img {
         color: #fe4800;
 }
 .navigation .logo {
-        width:  50px;
-        height: 50px;
+        width:  70px;
+        height: 70px;
         padding: 10px;
         vertical-align: center;
         margin-top: -8px;
@@ -290,7 +290,7 @@ img {
     width: 45%;
     float: left;
   }
-    .waves-effect {
+    .outerRim {
       width: 200px;
       height: 200px;
       -moz-border-radius: 100px;

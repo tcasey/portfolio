@@ -2177,7 +2177,7 @@ body {
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup,
-main, menu, nav, section, summary {
+main, menu, , section, summary {
     display: block
 }
 
@@ -2401,8 +2401,8 @@ ul li {
     box-shadow: none !important
 }
 
-.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating,
-.dropdown-content, .collapsible, .side-nav {
+.z-depth-1, , .card-panel, .card, .toast, .btn, .btn-large, .btn-floating,
+.dropdown-content, .collapsible, .side- {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
 }
 
@@ -2918,7 +2918,7 @@ span.badge.new:after {
     content: " new"
 }
 
-nav ul a span.badge {
+ ul a span.badge {
     position: static;
     margin-left: 4px;
     line-height: 0
@@ -5742,11 +5742,11 @@ nav ul a span.badge {
     content: "\e843"
 }
 
-.mdi-image-navigate-before:before {
+.mdi-image-igate-before:before {
     content: "\e844"
 }
 
-.mdi-image-navigate-next:before {
+.mdi-image-igate-next:before {
     content: "\e845"
 }
 
@@ -6074,7 +6074,7 @@ nav ul a span.badge {
     content: "\e896"
 }
 
-.mdi-maps-navigation:before {
+.mdi-maps-igation:before {
     content: "\e897"
 }
 
@@ -6110,87 +6110,87 @@ nav ul a span.badge {
     content: "\e89f"
 }
 
-.mdi-navigation-apps:before {
+.mdi-igation-apps:before {
     content: "\e8a0"
 }
 
-.mdi-navigation-arrow-back:before {
+.mdi-igation-arrow-back:before {
     content: "\e8a1"
 }
 
-.mdi-navigation-arrow-drop-down-circle:before {
+.mdi-igation-arrow-drop-down-circle:before {
     content: "\e8a2"
 }
 
-.mdi-navigation-arrow-drop-down:before {
+.mdi-igation-arrow-drop-down:before {
     content: "\e8a3"
 }
 
-.mdi-navigation-arrow-drop-up:before {
+.mdi-igation-arrow-drop-up:before {
     content: "\e8a4"
 }
 
-.mdi-navigation-arrow-forward:before {
+.mdi-igation-arrow-forward:before {
     content: "\e8a5"
 }
 
-.mdi-navigation-cancel:before {
+.mdi-igation-cancel:before {
     content: "\e8a6"
 }
 
-.mdi-navigation-check:before {
+.mdi-igation-check:before {
     content: "\e8a7"
 }
 
-.mdi-navigation-chevron-left:before {
+.mdi-igation-chevron-left:before {
     content: "\e8a8"
 }
 
-.mdi-navigation-chevron-right:before {
+.mdi-igation-chevron-right:before {
     content: "\e8a9"
 }
 
-.mdi-navigation-close:before {
+.mdi-igation-close:before {
     content: "\e8aa"
 }
 
-.mdi-navigation-expand-less:before {
+.mdi-igation-expand-less:before {
     content: "\e8ab"
 }
 
-.mdi-navigation-expand-more:before {
+.mdi-igation-expand-more:before {
     content: "\e8ac"
 }
 
-.mdi-navigation-fullscreen-exit:before {
+.mdi-igation-fullscreen-exit:before {
     content: "\e8ad"
 }
 
-.mdi-navigation-fullscreen:before {
+.mdi-igation-fullscreen:before {
     content: "\e8ae"
 }
 
-.mdi-navigation-menu:before {
+.mdi-igation-menu:before {
     content: "\e8af"
 }
 
-.mdi-navigation-more-horiz:before {
+.mdi-igation-more-horiz:before {
     content: "\e8b0"
 }
 
-.mdi-navigation-more-vert:before {
+.mdi-igation-more-vert:before {
     content: "\e8b1"
 }
 
-.mdi-navigation-refresh:before {
+.mdi-igation-refresh:before {
     content: "\e8b2"
 }
 
-.mdi-navigation-unfold-less:before {
+.mdi-igation-unfold-less:before {
     content: "\e8b3"
 }
 
-.mdi-navigation-unfold-more:before {
+.mdi-igation-unfold-more:before {
     content: "\e8b4"
 }
 
@@ -6842,7 +6842,7 @@ nav ul a span.badge {
     }
 }
 
-nav {
+ {
     color: #fff;
     background-color: #ee6e73;
     width: 100%;
@@ -6850,40 +6850,40 @@ nav {
     line-height: 56px
 }
 
-nav a {
+ a {
     color: #fff
 }
 
-nav .nav-wrapper {
+ .-wrapper {
     position: relative;
     height: 100%
 }
 
-nav .nav-wrapper i {
+ .-wrapper i {
     display: block;
     font-size: 2rem
 }
 
 @media only screen and (min-width: 993px) {
-    nav a.button-collapse {
+     a.button-collapse {
         display: none
     }
 }
 
-nav .button-collapse {
+ .button-collapse {
     float: left;
     position: relative;
     z-index: 1;
     height: 56px
 }
 
-nav .button-collapse i {
+ .button-collapse i {
     font-size: 2.7rem;
     height: 56px;
     line-height: 56px
 }
 
-nav .brand-logo {
+ .brand-logo {
     position: absolute;
     color: #fff;
     display: inline-block;
@@ -6892,7 +6892,7 @@ nav .brand-logo {
     white-space: nowrap
 }
 
-nav .brand-logo.center {
+ .brand-logo.center {
     left: 50%;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -6902,7 +6902,7 @@ nav .brand-logo.center {
 }
 
 @media only screen and (max-width: 992px) {
-    nav .brand-logo {
+     .brand-logo {
         left: 50%;
         -webkit-transform: translateX(-50%);
         -moz-transform: translateX(-50%);
@@ -6911,7 +6911,7 @@ nav .brand-logo.center {
         transform: translateX(-50%);
     }
 
-    nav .brand-logo.left, nav .brand-logo.right {
+     .brand-logo.left,  .brand-logo.right {
         padding: 0;
         -webkit-transform: none;
         -moz-transform: none;
@@ -6920,26 +6920,26 @@ nav .brand-logo.center {
         transform: none
     }
 
-    nav .brand-logo.left {
+     .brand-logo.left {
         left: 0.5rem
     }
 
-    nav .brand-logo.right {
+     .brand-logo.right {
         right: 0.5rem;
         left: auto
     }
 }
 
-nav .brand-logo.right {
+ .brand-logo.right {
     right: 0.5rem;
     padding: 0
 }
 
-nav ul {
+ ul {
     margin: 0
 }
 
-nav ul li {
+ ul li {
     -webkit-transition: background-color .3s;
     -moz-transition: background-color .3s;
     -o-transition: background-color .3s;
@@ -6949,45 +6949,39 @@ nav ul li {
     padding: 0
 }
 
-nav ul li:hover, nav ul li.active {
+ ul li:hover,  ul li.active {
     background-color: rgba(0, 0, 0, 0.1)
 }
 
-nav ul a {
-    font-size: 1rem;
-    color: #fff;
-    display: block;
-    padding: 0 15px
-}
 
-nav ul.left {
+ ul.left {
     float: left
 }
 
-nav .input-field {
+ .input-field {
     margin: 0
 }
 
-nav .input-field input {
+ .input-field input {
     height: 100%;
     font-size: 1.2rem;
     border: none;
     padding-left: 2rem
 }
 
-nav .input-field input:focus, nav .input-field input[type=text]:valid,
-nav .input-field input[type=password]:valid, nav .input-field input[type=email]:valid,
-nav .input-field input[type=url]:valid, nav .input-field input[type=date]:valid {
+ .input-field input:focus,  .input-field input[type=text]:valid,
+ .input-field input[type=password]:valid,  .input-field input[type=email]:valid,
+ .input-field input[type=url]:valid,  .input-field input[type=date]:valid {
     border: none;
     box-shadow: none
 }
 
-nav .input-field label {
+ .input-field label {
     top: 0;
     left: 0
 }
 
-nav .input-field label i {
+ .input-field label i {
     color: rgba(255, 255, 255, 0.7);
     -webkit-transition: color .3s;
     -moz-transition: color .3s;
@@ -6996,11 +6990,11 @@ nav .input-field label i {
     transition: color .3s
 }
 
-nav .input-field label.active i {
+ .input-field label.active i {
     color: #fff
 }
 
-nav .input-field label.active {
+ .input-field label.active {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -7008,23 +7002,23 @@ nav .input-field label.active {
     transform: translateY(0)
 }
 
-.navbar-fixed {
+.bar-fixed {
     position: relative;
     height: 56px;
     z-index: 998
 }
 
-.navbar-fixed nav {
+.bar-fixed  {
     position: fixed
 }
 
 @media only screen and (min-width: 601px) {
-    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    ,  .-wrapper i,  a.button-collapse,  a.button-collapse i {
         height: 64px;
         line-height: 64px
     }
 
-    .navbar-fixed {
+    .bar-fixed {
         height: 64px
     }
 }
@@ -7162,7 +7156,7 @@ small {
         font-size: 1.2rem;
     }
 
-    nav .brand-logo {
+     .brand-logo {
         position: absolute;
         color: #fff;
         display: inline-block;
@@ -7177,7 +7171,7 @@ small {
         font-size: 1.224rem;
     }
 
-    nav .brand-logo {
+     .brand-logo {
         position: absolute;
         color: #fff;
         display: inline-block;
@@ -7192,7 +7186,7 @@ small {
         font-size: 1.248rem;
     }
 
-    nav .brand-logo {
+     .brand-logo {
         position: absolute;
         color: #fff;
         display: inline-block;
@@ -7207,7 +7201,7 @@ small {
         font-size: 1.272rem;
     }
 
-    nav .brand-logo {
+     .brand-logo {
         position: absolute;
         color: #fff;
         display: inline-block;
@@ -7324,7 +7318,7 @@ small {
         font-size: 1.2rem;
     }
 
-    nav .brand-logo {
+     .brand-logo {
         position: absolute;
         color: #fff;
         display: inline-block;
@@ -8122,16 +8116,16 @@ a.waves-effect .waves-ripple {
     padding: 2rem
 }
 
-.side-nav .collapsible {
+.side- .collapsible {
     border: none;
     box-shadow: none
 }
 
-.side-nav .collapsible li {
+.side- .collapsible li {
     padding: 0
 }
 
-.side-nav .collapsible-header {
+.side- .collapsible-header {
     background-color: transparent;
     border: none;
     line-height: inherit;
@@ -8139,16 +8133,16 @@ a.waves-effect .waves-ripple {
     margin: 0 1rem
 }
 
-.side-nav .collapsible-header i {
+.side- .collapsible-header i {
     line-height: inherit
 }
 
-.side-nav .collapsible-body {
+.side- .collapsible-body {
     border: 0;
     background-color: #fff
 }
 
-.side-nav .collapsible-body li a {
+.side- .collapsible-body li a {
     margin: 0 1rem 0 2rem
 }
 
@@ -8497,7 +8491,7 @@ textarea.materialize-textarea + label:after {
     color: #444
 }
 
-.input-field input[type=search]:focus + label i, .input-field input[type=search]:focus ~ .mdi-navigation-close,
+.input-field input[type=search]:focus + label i, .input-field input[type=search]:focus ~ .mdi-igation-close,
 .input-field input[type=search]:focus ~ .material-icons {
     color: #444
 }
@@ -8506,7 +8500,7 @@ textarea.materialize-textarea + label:after {
     left: 1rem
 }
 
-.input-field input[type=search] ~ .mdi-navigation-close, .input-field input[type=search] ~ .material-icons {
+.input-field input[type=search] ~ .mdi-igation-close, .input-field input[type=search] ~ .material-icons {
     position: absolute;
     top: 0;
     right: 1rem;
@@ -9219,7 +9213,7 @@ select {
     border-left: 2px solid #ea4a4f
 }
 
-.side-nav {
+.side- {
     position: fixed;
     width: 240px;
     left: -105%;
@@ -9235,26 +9229,26 @@ select {
     will-change: left
 }
 
-.side-nav.right-aligned {
+.side-.right-aligned {
     will-change: right;
     right: -105%;
     left: auto
 }
 
-.side-nav .collapsible {
+.side- .collapsible {
     margin: 0
 }
 
-.side-nav li {
+.side- li {
     float: none;
     padding: 0 15px
 }
 
-.side-nav li:hover, .side-nav li.active {
+.side- li:hover, .side- li.active {
     background-color: #ddd
 }
 
-.side-nav a {
+.side- a {
     color: #444;
     display: block;
     font-size: 1rem;
@@ -9271,42 +9265,42 @@ select {
     z-index: 998
 }
 
-.side-nav.fixed a {
+.side-.fixed a {
     display: block;
     padding: 0 15px;
     color: #444
 }
 
-.side-nav.fixed {
+.side-.fixed {
     left: 0;
     position: fixed
 }
 
-.side-nav.fixed.right-aligned {
+.side-.fixed.right-aligned {
     right: 0;
     left: auto
 }
 
 @media only screen and (max-width: 992px) {
-    .side-nav.fixed {
+    .side-.fixed {
         left: -105%
     }
 
-    .side-nav.fixed.right-aligned {
+    .side-.fixed.right-aligned {
         right: -105%;
         left: auto
     }
 }
 
-.side-nav .collapsible-body li.active, .side-nav.fixed .collapsible-body li.active {
+.side- .collapsible-body li.active, .side-.fixed .collapsible-body li.active {
     background-color: #ee6e73
 }
 
-.side-nav .collapsible-body li.active a, .side-nav.fixed .collapsible-body li.active a {
+.side- .collapsible-body li.active a, .side-.fixed .collapsible-body li.active a {
     color: #fff
 }
 
-#sidenav-overlay {
+#side-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -10085,7 +10079,7 @@ select {
     border-color: rgba(0, 0, 0, 0.05)
 }
 
-.picker__nav--prev, .picker__nav--next {
+.picker__--prev, .picker__--next {
     position: absolute;
     padding: .5em 1.25em;
     width: 1em;
@@ -10094,18 +10088,18 @@ select {
     top: -0.25em
 }
 
-.picker__nav--prev {
+.picker__--prev {
     left: -1em;
     padding-right: 1.25em
 }
 
-.picker__nav--next {
+.picker__--next {
     right: -1em;
     padding-left: 1.25em
 }
 
-.picker__nav--disabled, .picker__nav--disabled:hover, .picker__nav--disabled:before,
-.picker__nav--disabled:before:hover {
+.picker__--disabled, .picker__--disabled:hover, .picker__--disabled:before,
+.picker__--disabled:before:hover {
     cursor: default;
     background: none;
     border-right-color: #f5f5f5;
@@ -10292,7 +10286,7 @@ select {
     font-weight: 300
 }
 
-.picker__nav--prev:hover, .picker__nav--next:hover {
+.picker__--prev:hover, .picker__--next:hover {
     cursor: pointer;
     color: #000000;
     background: #a1ded8
@@ -10386,7 +10380,7 @@ select {
     color: #26a69a
 }
 
-.picker__nav--prev:before, .picker__nav--next:before {
+.picker__--prev:before, .picker__--next:before {
     content: " ";
     border-top: .5em solid transparent;
     border-bottom: .5em solid transparent;
@@ -10397,7 +10391,7 @@ select {
     margin: 0 auto
 }
 
-.picker__nav--next:before {
+.picker__--next:before {
     border-right: 0;
     border-left: 0.75em solid #676767
 }
@@ -11413,7 +11407,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     content: "\f0c8"
 }
 
-.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+.fa-icon:before, .fa-reorder:before, .fa-bars:before {
     content: "\f0c9"
 }
 
