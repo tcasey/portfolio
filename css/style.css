@@ -1,3 +1,4 @@
+
 @font-face{ 
   font-family: 'Lot';
   src: url('../fonts/LOT-webfont.eot');
@@ -11,8 +12,7 @@
             Foundation
 --------------------------------*/
 html {
-  background: linear-gradient(to right,  rgba(25,74,77,1) 1%,rgba(102,153,82,1) 100%);
-  background-repeat: no-repeat;
+  background-color: #fff;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -96,8 +96,8 @@ img {
 }
 
 .navigation-visible {
-  background: linear-gradient(to right,  rgba(25,74,77,1) 1%,rgba(102,153,82,1) 100%);
-  border-bottom: 1px solid #F9F1DD;
+  background: black;
+  opacity: 0.9;
   margin-top: -40em;
 }
 
@@ -130,11 +130,19 @@ img {
        
 }
 .navigation-container .menu a:hover {
-        color: #3b3b3b;
+        color: #fe4800;
 }
 .navigation-container .menu a:active {
-        color: #CC4907;
+        color: #fe4800;
 }
+.navigation .logo {
+        width:  80px;
+        height: 80px;
+        padding: 10px;
+        vertical-align: center;
+        margin-top: -8px;
+}
+
 /*------------------------------
             Background
 --------------------------------*/
@@ -170,7 +178,7 @@ img {
   display: inline-flex; 
   align-items: center;
   -webkit-align-items: center;
-  -moz-align-items: center;
+  -moz-align-items: celnter;
   border: 1px solid: transparent;
   box-shadow: inset 0px 0px 35px 10px rgba(0, 0, 0, 0.12), -2px -2px 0px 2px rgba(255, 255, 255, 0.13);
   transition: all 0.9s;
@@ -206,7 +214,7 @@ img {
 */
 
 .goDown {
-      color: #000;
+    
       display: inline-block;
       position: relative;
     }
@@ -251,12 +259,12 @@ img {
 --------------------------------*/
 #profile {
     display: block;
-    padding: 2em;
+    padding: 4em;
     font-size: 100%;
     font: inherit;
-    vertical-align: baseline;
-    z-index: 200;
-    height: 65em;
+
+    z-index: 20;
+    height: 100%;
     background-color: #3b3b3b;
     overflow: hidden;
 }
@@ -269,7 +277,7 @@ img {
     color: white;
     font-size: 2.04rem;
     width: 100%;
-    padding: 2.5em 0;
+    padding: 1em;
 
     background-color: transparent;
     text-align: center;
@@ -283,8 +291,8 @@ img {
     float: left;
   }
     .outerRim {
-      width: 170px;
-      height: 170px;
+      width: 200px;
+      height: 200px;
       -moz-border-radius: 100px;
       -webkit-border-radius: 100px;
       border-radius: 100px;
@@ -294,8 +302,8 @@ img {
     }
 
       .userPic {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
         background: url('../images/profile-pic.jpg');
         background-size: cover;
         background-position: center; 
@@ -426,6 +434,12 @@ img {
 
 #container {
     opacity: 1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -ms-box-sizing: border-box
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100);
     -webkit-transition: opacity .25s ease-in;
@@ -434,9 +448,6 @@ img {
     -o-transition: opacity .25s ease-in;
     transition: opacity .25s ease-in
 }
-
-
-
 
 
 #grid .item.loading {
@@ -449,7 +460,7 @@ img {
     border: 0
 }
 
-.touch #grid .item a {
+#grid .item a {
     background: none;
     -webkit-transition: none;
     -moz-transition: none;
@@ -464,9 +475,10 @@ img {
     filter: alpha(opacity=0)
 }
 
-#grid .item .bg {
+#grid .item a img {
     position: absolute;
-   
+    left: -1px;
+    top: -1px;
     z-index: 4;
     width: 102%;
     height: 102%;
@@ -488,11 +500,11 @@ img {
 
 #grid .item a .img_container {
     position: relative;
-    padding-bottom: 100%
+    padding-bottom: 150%;
 }
 
 #grid .item.tall a .img_container {
-    padding-bottom: 150%
+    padding-bottom: 150%;
 }
 /*------------------------------------------------------
                     HOVER
@@ -564,12 +576,12 @@ img {
             Footer 
 --------------------------------*/
 .social {
-    background-color: transparent;
+    background: linear-gradient(to right,  rgba(25,74,77,1) 1%,rgba(102,153,82,1) 100%);
     overflow: auto;
-    padding-bottom: 9.375rem;
+    padding-bottom: 7rem;
     text-align: center;
     margin: 0 auto;
-    padding: 10;
+    padding-top: 2em;
     border: 0;
     font-size: 100%;
     font: inherit;
@@ -634,6 +646,54 @@ img {
     color: purple;
 }
 
+/*------------------------------
+        Float Shadow 
+--------------------------------*/
+.hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+  -webkit-transform: translateY(-4px);
+  transform: translateY(-4px);
+}
+.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+}
+
+
+
 
 /*------------------------------------------------------
                     Media Queries
@@ -659,85 +719,7 @@ img {
         margin-bottom: -25.1%
     }
 
-    .item.tall.shift1 {
-        -webkit-transform: translate(0%, 33.33333%);
-        -moz-transform: translate(0%, 33.33333%);
-        -ms-transform: translate(0%, 33.33333%);
-        -o-transform: translate(0%, 33.33333%);
-        transform: translate(0%, 33.33333%)
-    }
-
-    .item.tall.shift2 {
-        -webkit-transform: translate(0%, 66.66666500000001%);
-        -moz-transform: translate(0%, 66.66666500000001%);
-        -ms-transform: translate(0%, 66.66666500000001%);
-        -o-transform: translate(0%, 66.66666500000001%);
-        transform: translate(0%, 66.66666500000001%)
-    }
-
-    .item.tall.shift3 {
-        -webkit-transform: translate(0%, 100%);
-        -moz-transform: translate(0%, 100%);
-        -ms-transform: translate(0%, 100%);
-        -o-transform: translate(0%, 100%);
-        transform: translate(0%, 100%)
-    }
-
-    .item.tall.shift4 {
-        -webkit-transform: translate(0%, 133.33333000000002%);
-        -moz-transform: translate(0%, 133.33333000000002%);
-        -ms-transform: translate(0%, 133.33333000000002%);
-        -o-transform: translate(0%, 133.33333000000002%);
-        transform: translate(0%, 133.33333000000002%)
-    }
-
-    .item.tall.shift5 {
-        -webkit-transform: translate(0%, 166.666665%);
-        -moz-transform: translate(0%, 166.666665%);
-        -ms-transform: translate(0%, 166.666665%);
-        -o-transform: translate(0%, 166.666665%);
-        transform: translate(0%, 166.666665%)
-    }
-
-    .item.shift1 {
-        -webkit-transform: translate(0%, 50%);
-        -moz-transform: translate(0%, 50%);
-        -ms-transform: translate(0%, 50%);
-        -o-transform: translate(0%, 50%);
-        transform: translate(0%, 50%)
-    }
-
-    .item.shift2 {
-        -webkit-transform: translate(0%, 100%);
-        -moz-transform: translate(0%, 100%);
-        -ms-transform: translate(0%, 100%);
-        -o-transform: translate(0%, 100%);
-        transform: translate(0%, 100%)
-    }
-
-    .item.shift3 {
-        -webkit-transform: translate(0%, 150%);
-        -moz-transform: translate(0%, 150%);
-        -ms-transform: translate(0%, 150%);
-        -o-transform: translate(0%, 150%);
-        transform: translate(0%, 150%)
-    }
-
-    .item.shift4 {
-        -webkit-transform: translate(0%, 200%);
-        -moz-transform: translate(0%, 200%);
-        -ms-transform: translate(0%, 200%);
-        -o-transform: translate(0%, 200%);
-        transform: translate(0%, 200%)
-    }
-
-    .item.shift5 {
-        -webkit-transform: translate(0%, 250%);
-        -moz-transform: translate(0%, 250%);
-        -ms-transform: translate(0%, 250%);
-        -o-transform: translate(0%, 250%);
-        transform: translate(0%, 250%)
-    }
+    
 }
 
 @media screen and (min-width:900px) {
@@ -787,3 +769,17 @@ img {
     display: none;
   }
 } 
+<<<<<<< HEAD
+=======
+@media only screen and (max-width: 400px) {
+  .circle-h {
+    width: 300px;
+    height: 300px;
+  }
+  .circle {
+    width: 222px;
+    height: 222px;
+    font-size: 1.5em;
+  }
+}
+>>>>>>> gh-pages
