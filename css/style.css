@@ -1,5 +1,5 @@
 
-@font-face{ 
+@font-face{
   font-family: 'Lot';
   src: url('../fonts/LOT-webfont.eot');
   src: url('../fonts/LOT-webfont.eot?#iefix') format('embedded-opentype'),
@@ -91,7 +91,7 @@ img {
   width: 100%;
   margin: 0;
   position: fixed;
-  z-index: 9999;  
+  z-index: 9999;
   display: none;
 }
 
@@ -117,7 +117,7 @@ img {
       font-size: 2em;
       text-transform: uppercase;
       float: left;
-      
+
 }
 
 .navigation-container .menu {
@@ -127,7 +127,7 @@ img {
         display: inline-block;
         padding-right: 0.75em;
         font-size: 1.5em;
-       
+
 }
 .navigation-container .menu a:hover {
         color: #fe4800;
@@ -159,7 +159,7 @@ img {
     text-align: center;
   }
 /*------------------------------
-          Circle Content 
+          Circle Content
 --------------------------------*/
 .circle-section {
   text-align: center;
@@ -175,7 +175,7 @@ img {
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  display: inline-flex; 
+  display: inline-flex;
   align-items: center;
   -webkit-align-items: center;
   -moz-align-items: celnter;
@@ -210,11 +210,11 @@ img {
 /* .circle:hover {
   transform: scale(1.28);
   transition: all 0.5s;
-} 
+}
 */
 
 .goDown {
-    
+
       display: inline-block;
       position: relative;
     }
@@ -222,7 +222,7 @@ img {
 @keyframes szerokosc  {
   0%  {
      background-color: beige;
-  }  
+  }
   25% {
     background-color: #eee;
   }
@@ -234,13 +234,13 @@ img {
   }
 100% {
     background-color: beige;
-  } 
+  }
 }
 
 @-webkit-keyframes szerokosc {
   0%  {
      background-color: beige;
-  }  
+  }
   25% {
     background-color: #eee;
   }
@@ -252,10 +252,10 @@ img {
   }
 100% {
     background-color: beige;
-  } 
+  }
 }
 /*------------------------------
-              Profile 
+              Profile
 --------------------------------*/
 #profile {
     display: block;
@@ -296,7 +296,7 @@ img {
       -moz-border-radius: 100px;
       -webkit-border-radius: 100px;
       border-radius: 100px;
-      
+
       margin: 0 auto;
       position: relative;
     }
@@ -306,12 +306,12 @@ img {
         height: 200px;
         background: url('../images/profile-pic.jpg');
         background-size: cover;
-        background-position: center; 
+        background-position: center;
         background-repeat: no-repeat;
         -moz-border-radius: 75px;
         -webkit-border-radius: 75px;
         border-radius: 75px;
-       
+
         /* "Absolute Centering" */
         margin: auto;
         position: absolute;
@@ -338,11 +338,11 @@ img {
     width: 35%;
     float: right;
     border-radius: 5em;
-    
+
   }
 
 /*------------------------------
-        Quote & Skillset 
+        Quote & Skillset
 --------------------------------*/
 .quote {
   background-color: #F9F1DD;
@@ -357,28 +357,26 @@ img {
 }
   .quote .container {
     padding: 5em;
-  } 
+  }
   .quote h1 {
     margin: 1em 0;
     font-weight: bold;
   }
-
   .skillset {
     text-align: center;
   }
     .skillset h2 {
       margin-top: 1em;
-      color: #fe4800; 
+      color: #fe4800;
       font-weight: 400;
     }
     .skillset p {
         display: inline;
         margin: 0.5em;
-
     }
 
 /*------------------------------
-              Projects 
+              Projects
 --------------------------------*/
 .projects {
     background-color: #3b3b3b;
@@ -390,7 +388,7 @@ img {
     border-bottom: none;
 }
 /*------------------------------
-              Updated Work 
+              Updated Work
 --------------------------------*/
 #grid {
     font-size: 0;
@@ -573,7 +571,7 @@ img {
 }
 
 /*------------------------------
-            Footer 
+            Footer
 --------------------------------*/
 .social {
     background: linear-gradient(to right,  rgba(25,74,77,1) 1%,rgba(102,153,82,1) 100%);
@@ -588,7 +586,7 @@ img {
     vertical-align: baseline;
     box-sizing: border-box;
     height: 20em;
-   
+
 }
 .social .content >h5{
     font-family: 'Quicksand', sans-serif;
@@ -647,7 +645,7 @@ img {
 }
 
 /*------------------------------
-        Float Shadow 
+        Float Shadow
 --------------------------------*/
 .hvr-float-shadow {
   display: inline-block;
@@ -719,7 +717,7 @@ img {
         margin-bottom: -25.1%
     }
 
-    
+
 }
 
 @media screen and (min-width:900px) {
@@ -749,7 +747,7 @@ img {
     }
 }
 @media only screen and (max-width: 999px) {
-    .container { 
+    .container {
       padding: 2em;
     }
 
@@ -768,7 +766,7 @@ img {
   .slc {
     display: none;
   }
-} 
+}
 @media only screen and (max-width: 400px) {
   .circle-h {
     width: 300px;
